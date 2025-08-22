@@ -19,7 +19,7 @@ const About = () => {
           <h1 className='lg:text-[7rem] md:text-[6rem] text-[6rem] text-center lg:text-left'>
             About<span className="text-[rgb(190,179,254)] "> Me</span>
           </h1>
-          <TypingAnimation className='text-[#E5FC76] leading-[36px] text-center lg:text-left'>
+          <TypingAnimation className='text-[#E5FC76] mb-7 leading-[36px] text-center lg:text-left'>
             Hi, My Name is Hussain
           </TypingAnimation>
           <p className='text-base lg:text-lg'>

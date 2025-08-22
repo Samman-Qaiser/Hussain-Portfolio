@@ -21,7 +21,6 @@ import  WrapButton  from "@/components/ui/wrap-button"
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import { FloatingDock } from "../components/ui/floating-dock";
 import { Globe } from "lucide-react";
-import ImageCursorTrail from "../components/ui/image-cursortrail"
 
 export const Home = () => {
       const items = [

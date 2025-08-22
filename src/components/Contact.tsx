@@ -155,7 +155,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-purple-200/35 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors"
                     placeholder="Your Name"
                     required
                   />
@@ -171,7 +171,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 bg-purple-200/35  border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors"
                     placeholder="your.email@example.com"
                     required
                   />
@@ -189,7 +189,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 bg-purple-200/35  border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors"
                   placeholder="Project Discussion"
                   required
                 />
@@ -206,7 +206,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={6}
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-purple-200/35  border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none transition-colors resize-none"
                   placeholder="Tell me about your project..."
                   required
                 />

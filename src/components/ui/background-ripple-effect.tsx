@@ -1,9 +1,7 @@
 "use client";
 import React, { useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { SparklesText } from "@/components/magicui/sparkles-text";
-import { AnimatedCursor } from "../Cursor";
-import { FloatingDock } from "./floating-dock";
+
 export const BackgroundRippleEffect = ({
   rows = 4,
   cols = 27,
@@ -20,7 +18,7 @@ export const BackgroundRippleEffect = ({
     col: number;
   } | null>(null);
   const [rippleKey, setRippleKey] = useState(0);
-  const ref = useRef<any>(null);
+const ref = useRef<HTMLDivElement>(null);
 
   return (
     <div

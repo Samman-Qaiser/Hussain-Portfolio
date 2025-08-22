@@ -81,10 +81,10 @@ const images = [
       <span className="text-[rgb(229,252,118)]">BUILD </span>
       <span className="text-black text-stroke-custom">YOUR</span>
     </h1>
-    <h1 className="text-white flex gap-3 lg:text-[9rem] md:text-[9rem] xs:text-[7rem] text-[5rem] leading-[3.5rem] font-extrabold lg:leading-[6rem] md:leading-[6rem]">
+    <h1 className="text-white mt-3 flex gap-3 lg:text-[9rem] md:text-[9rem] xs:text-[7rem] text-[5rem] leading-[3rem] font-extrabold lg:leading-[6rem] md:leading-[6rem]">
       DREAM{" "}
 
-<div className="mt-3 pb-2"   style={{
+<div className=" lg:pb-2"   style={{
     borderStyle: 'dashed',
     borderWidth: '2px', // thicker border
     borderColor: 'transparent',

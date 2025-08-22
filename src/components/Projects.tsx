@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <section id="projects" className="  text-white p-12" >
       <h1 className="text-[7rem] md:text-[7rem] lg:leading-0 leading-[5rem] font-bold text-center mb-12">Featured <span className="text-[#BEB3FE]">Projects</span> </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12 md:gap-7 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12 md:gap-7 place-items-center ">
         {projects.map((project, index) => (
           <CardContainer key={index} containerClassName="w-full max-w-sm">
             <CardBody className="bg-black h-[80vh] border border-white/20 rounded-2xl p-6 shadow-lg">

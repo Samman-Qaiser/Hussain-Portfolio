@@ -120,9 +120,9 @@ const Contact = () => {
         >
           <motion.h1
             variants={itemVariants}
-            className="text-[5rem] md:text-[7rem] font-bold mb-6 bg-gradient-to-r from-[#BEB3FE] to-purple-400 bg-clip-text text-transparent"
+            className="text-[5rem] md:text-[7rem] font-bold mb-6 text-white bg-clip-text "
           >
-            Get In Touch
+            Get In <span className="text-[rgb(190,179,254)] ">Touch</span>
           </motion.h1>
           <motion.p 
             variants={itemVariants}

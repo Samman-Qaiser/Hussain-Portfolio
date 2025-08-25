@@ -3,13 +3,18 @@ import { motion } from "framer-motion";
 import { Briefcase, Calendar1Icon, LocateIcon, MapPin } from "lucide-react";
 
 const experiences = [
-  {
-    role: "Android Developer",
-    company: "Enfotrix Pvt Ltd",
-    date: "May 2023 – Present",
-    description:
-      "Built Android apps using Kotlin, Java, MVVM, Firebase, and REST APIs. Collaborated with cross-functional teams to deliver production-ready apps.",
-  },
+{
+  role: "Android Developer",
+  company: "Enfotrix Pvt Ltd",
+  date: "May 2023 – Present",
+  description: [
+    "Life Changer(Finance management system user and admin Android app)",
+    "Collaborated with cross-functional teams to deliver production-ready apps.",
+    "Optimized app performance and ensured clean architecture.",
+    "Developed Quick Bite, a food delivery app for easy and efficient meal ordering.",
+    "CGS(School Management System) Built a school management system with apps for teachers, students, and the principal."
+  ],
+},
   {
     role: "Full-Stack Developer",
     company: "Freelance / University Projects",
@@ -17,13 +22,7 @@ const experiences = [
     description:
       "Developed web apps using MERN stack, Flask for ML APIs, and deployed apps on cloud servers.",
   },
-  {
-    role: "IT Student",
-    company: "University of Sargodha",
-    date: "2020 – Present",
-    description:
-      "Pursuing BS Information Technology. Strong foundation in C++, Java, Kotlin, Python, and software engineering concepts.",
-  },
+
 ];
 
 const Experince = () => {
@@ -57,8 +56,18 @@ const Experince = () => {
               
                 <p className="text-md text-gray-700 mb-2 flex items-center gap-2"><span><Calendar1Icon /></span>{exp.date}</p>
                 </div>
-                  <h3 className="text-xl text-black font-semibold">Key Acheivements</h3>
-                <p className="text-gray-900 text-lg">{exp.description}</p>
+           <h3 className="text-xl text-black font-semibold">Key Achievements</h3>
+
+{Array.isArray(exp.description) ? (
+  <ul className="list-disc list-inside space-y-2 text-gray-900 text-lg">
+    {exp.description.map((point: string, i: number) => (
+      <li key={i}>{point}</li>
+    ))}
+  </ul>
+) : (
+  <p className="text-gray-900 text-lg">{exp.description}</p>
+)}
+
               </div>
             </motion.div>
           ))}

@@ -15,13 +15,14 @@ const About = () => {
     >
       {/* Left Content */}
       <div className='w-full lg:w-1/2  flex flex-col gap-7 lg:items-start items-center p-4'>
-        <BoxReveal>
+
           <h1 className='lg:text-[7rem] md:text-[6rem] text-[6rem] text-center lg:text-left'>
             About<span className="text-[rgb(190,179,254)] "> Me</span>
           </h1>
           <TypingAnimation className='text-[#E5FC76] mb-7 leading-[36px] text-center lg:text-left'>
-            Hi, My Name is Hussain
+            ✋Hi, My Name is Hussain
           </TypingAnimation>
+                  <BoxReveal>
           <p className='text-base lg:text-lg'>
             I’m an Android Developer passionate about building smooth, user-friendly, and high-performing mobile apps. With experience in Java, Kotlin, and modern Android frameworks, I love turning ideas into real-world applications that solve problems and create impact.
             <br /><br />

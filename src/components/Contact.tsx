@@ -142,7 +142,7 @@ const Contact = () => {
             className="relative"
           >
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-25"></div>
-            <form onSubmit={handleSubmit} className="relative bg-black backdrop-blur-sm border border-slate-700 p-8 rounded-lg space-y-6">
+            <form onSubmit={handleSubmit} className="relative bg-[#2B2B2B] backdrop-blur-sm border border-slate-700 p-8 rounded-lg space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-white font-medium mb-2">
@@ -266,7 +266,7 @@ const Contact = () => {
                     variants={itemVariants}
                     href={info.href}
                     whileHover={{ x: 10, scale: 1.02 }}
-                    className="flex items-center p-4 bg-black backdrop-blur-sm border border-slate-700 rounded-lg hover:border-blue-500/50 transition-all duration-300 group"
+                    className="flex items-center p-4 bg-[#2B2B2B] backdrop-blur-sm border border-slate-700 rounded-lg hover:border-blue-500/50 transition-all duration-300 group"
                   >
                     <div className="p-3 bg-[#BEB3FE] rounded-lg mr-4 group-hover:bg-[#E5FC76] transition-colors">
                       <Icon className="w-6 h-6 text-zinc-900" />

@@ -18,11 +18,34 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experince from "@/components/Experince";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 const Page = () => {
  const [isOpen, setIsOpen] = useState(false);
+ const testimonials = [
+  {
+    quote: "This platform has transformed the way I work with my clients.",
+    name: "John Doe",
+    designation: "CEO, CompanyX",
+    src: "https://picsum.photos/id/237/500/500",
+  },
+  {
+    quote: "Amazing service! Highly recommend to everyone.",
+    name: "Jane Smith",
+    designation: "Marketing Manager, StartupY",
+    src: "https://picsum.photos/id/238/500/500",
+  },
+  {
+    quote: "A seamless experience from start to finish.",
+    name: "Robert Wilson",
+    designation: "Product Designer",
+    src: "https://picsum.photos/id/239/500/500",
+  },
+];
+
   return (
     <div>
-      <Navbar className="fixed top-3 left-0 bg-[#53544f] w-[90vw] rounded-full m-auto backdrop-blur-lg border-b border-white/10 z-50">
+      <Navbar className="fixed top-3 left-0 bg-[#2A2A2A] w-[90vw] rounded-full m-auto backdrop-blur-lg border-b border-white/10 z-50">
         <NavBody>
           {/* Logo */}
           <NavbarLogo />
@@ -76,7 +99,13 @@ const Page = () => {
 <Skills/>
 <Projects />
 <Experince />
+ <h1 className='lg:text-[7rem] md:text-[6rem] text-white lg:leading-[2em] leading-[4rem]   text-[6rem] text-center '>
+           What My  <span className="text-[#beb3fc]">Clients Say</span>
+          </h1>
+      <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
 <Contact />
+<Footer />
+
     </div>
   );
 };

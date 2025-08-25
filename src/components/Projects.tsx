@@ -7,16 +7,18 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    name: "E-Commerce App",
-    description: "A full-featured mobile e-commerce app with authentication, cart, and payments.",
-    image: "/hussain.jpg",
+    name: "ECO Education",
+    description:
+      "A Revolutionary Android App for Visually Impaired Students 🌟 Empowering students through voice-enabled learning! Our app makes education more accessible by using smart AI, speech-based quizzes, voice commands for notes, and assignment submissions – all tailored for visually impaired learners.",
+    video: "/EcoEducationVideo.mp4",
     skills: ["Kotlin", "Firebase", "MVVM", "REST API"],
   },
   {
-    name: "Portfolio Website",
-    description: "Personal portfolio built with Next.js, Tailwind CSS, and animations.",
-    image: "/projects/portfolio.png",
-    skills: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    name: "Abbas Stock",
+    description:
+      "A full-fledged Android app for secure YouTube channel trading, combining fingerprint authentication, real-time YouTube API stats, complete buy/sell modules, automated ownership reminders, and profit-tracking reports. With smart features like channel verification indicators and shareable performance cards.",
+    image: "/abbasStockBanner.jpg",
+    skills: ["MVVM", "Hilt ", "Jetpack Compose UI", "Firebase"],
   },
   {
     name: "ML API with Flask",
@@ -28,13 +30,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="  text-white p-12" >
-      <h1 className="text-[7rem] md:text-[7rem] lg:leading-0 leading-[5rem] font-bold text-center mb-12">Featured <span className="text-[#BEB3FE]">Projects</span> </h1>
+    <section id="projects" className="text-white p-12">
+      <h1 className="text-[7rem] md:text-[7rem] lg:leading-0 leading-[5rem] font-bold text-center mb-12">
+        Featured <span className="text-[#BEB3FE]">Projects</span>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12 md:gap-7 place-items-center ">
         {projects.map((project, index) => (
           <CardContainer key={index} containerClassName="w-full max-w-sm">
-            <CardBody className="bg-black h-[80vh] border border-white/20 rounded-2xl p-6 shadow-lg">
-              
+            <CardBody className="bg-[#2B2B2B] border border-white/20 space-y-6 rounded-2xl p-6 shadow-lg">
               {/* Project Title */}
               <CardItem translateZ={50} className="text-2xl font-semibold mb-2">
                 {project.name}
@@ -45,21 +48,44 @@ const Projects = () => {
                 {project.description}
               </CardItem>
 
-              {/* Image */}
-              <CardItem translateZ={80} className="w-full h-[40vh] mb-4 rounded-xl overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  width={400}
-                  height={150}
-                  className="rounded-xl object-cover"
-                />
-              </CardItem>
+              {/* Image or Video */}
+            {/* Image or Video */}
+<CardItem
+  translateZ={80}
+  className="w-full h-[40vh] mb-4 rounded-xl overflow-hidden"
+>
+  {project.video ? (
+  <video
+  src={project.video}
+  autoPlay
+  loop
+  muted
+    width={960}
+  height={720}
+  playsInline
+  className="w-full h-full rounded-xl object-cover"
+/>
+
+  ) : project.image ? (
+    <Image
+      src={project.image as string} // ✅ guaranteed to be string
+      alt={project.name}
+      width={1920}
+  height={1080}
+      className="rounded-xl object-cover"
+    />
+  ) : null}
+</CardItem>
+
 
               {/* Skill Badges */}
               <CardItem translateZ={60} className="flex flex-wrap gap-2">
                 {project.skills.map((skill, i) => (
-                  <Badge key={i} variant="outline" className="bg-[#E5FC76] text-black text-xs">
+                  <Badge
+                    key={i}
+                    variant="outline"
+                    className="bg-[#E5FC76] text-black text-xs"
+                  >
                     {skill}
                   </Badge>
                 ))}

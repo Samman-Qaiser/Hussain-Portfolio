@@ -53,7 +53,7 @@ const Projects = () => {
             {/* Image or Video */}
 <CardItem
   translateZ={80}
-  className="w-full h-[40vh] mb-4 rounded-xl overflow-hidden"
+  className="w-full h-auto space-y-3 mb-4 rounded-xl overflow-hidden"
 >
   {project.video ? (
   <video
@@ -72,7 +72,7 @@ const Projects = () => {
       src={project.image as string} // ✅ guaranteed to be string
       alt={project.name}
        
-      className="rounded-xl object-cover w-[100%] sm:min-h-[30vh] "
+      className="rounded-xl object-cover w-[100%] max-h-[34vh] "
     />
   ) : null}
 </CardItem>

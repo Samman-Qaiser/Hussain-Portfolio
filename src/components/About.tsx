@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div 
       id='about'
-      className='text-white lg:p-12 md:p-12 p-4 lg:mt-[38vh]   flex flex-col lg:flex-row items-center justify-between w-full'
+      className='text-white lg:p-12 md:p-12 p-4 lg:mt-[38vh]   flex flex-col lg:flex-row items-center justify-between w-[100vw]  overflow-x-hidden'
     >
       {/* Left Content */}
       <div className='w-full lg:w-1/2  flex flex-col gap-7 lg:items-start items-center p-4'>

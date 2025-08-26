@@ -50,7 +50,7 @@ const MarqueeRow = ({
 
 export default function SkillsSection() {
   return (
-    <section className="w-full py-16 flex flex-col gap-8">
+    <section className="w-[100vw] overflow-x-hidden py-16 flex flex-col gap-8">
       <h1 className="text-[7rem]  text-white md:text-[7rem] font-bold text-center">
         My <span className="text-[rgb(190,179,254)] ">Skills</span>
       </h1>

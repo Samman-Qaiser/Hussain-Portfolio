@@ -72,7 +72,7 @@ const images = [
   return (
     <BackgroundRippleEffect>
     
-  <div className="w-full mt-7 h-full flex flex-col items-center justify-center">
+  <div className="w-[100vw]  overflow-x-hidden mt-7 h-full flex flex-col items-center justify-center">
   
     <h1 className="text-white lg:text-[9rem] md:text-[9rem]  text-[5rem] leading-[3.5rem] font-extrabold lg:leading-[6rem] md:leading-[6rem]">
       Hi, I HELP YOU{" "}

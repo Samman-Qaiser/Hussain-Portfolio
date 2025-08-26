@@ -63,7 +63,8 @@ const Projects = () => {
   muted
   
   playsInline
-  className=" w-[100%] min-h-[10vh]  rounded-xl object-cover"
+  className=" rounded-xl object-cover w-[100%] max-h-[34vh] "
+    
 />
 
   ) : project.image ? (

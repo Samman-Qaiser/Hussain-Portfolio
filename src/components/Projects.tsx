@@ -35,10 +35,10 @@ const Projects = () => {
       <h1 className="text-[7rem] md:text-[7rem] lg:leading-0 leading-[5rem] font-bold text-center mb-12">
         Featured <span className="text-[#BEB3FE]">Projects</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 p-6 w-[100vw] lg:grid-cols-3 row-gap-1  md:gap-7 place-items-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-3 self-center right-2 relative  m-auto w-[100vw] lg:grid-cols-3 ">
         {projects.map((project, index) => (
-          <CardContainer key={index} containerClassName="w-[97%]  ">
-            <CardBody className=" bg-[#2B2B2B] border  lg:h-[90vh]  border-white/20 space-y-0 lg:space-y-6 rounded-2xl p-6 shadow-lg">
+          <CardContainer key={index} containerClassName="w-[97%]  m-auto ">
+            <CardBody className=" bg-[#2B2B2B] border   lg:h-[90vh]  border-white/20 space-y-2 lg:space-y-6 rounded-2xl p-6 shadow-lg">
               {/* Project Title */}
               <CardItem translateZ={50} className="text-2xl font-semibold mb-2">
                 {project.name}

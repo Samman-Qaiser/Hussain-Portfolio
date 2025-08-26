@@ -21,23 +21,24 @@ const projects = [
     skills: ["MVVM", "Hilt ", "Jetpack Compose UI", "Firebase"],
   },
   {
-    name: "ML API with Flask",
-    description: "Machine learning API backend with Flask, deployed on cloud.",
-    image: "/projects/mlapi.png",
-    skills: ["Python", "Flask", "Machine Learning", "Deployment"],
+    name: "Abbas Stock",
+    description:
+      "A full-fledged Android app for secure YouTube channel trading, combining fingerprint authentication, real-time YouTube API stats, complete buy/sell modules, automated ownership reminders, and profit-tracking reports. With smart features like channel verification indicators and shareable performance cards.",
+    image: "/abbasStockBanner.jpg",
+    skills: ["MVVM", "Hilt ", "Jetpack Compose UI", "Firebase"],
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-white p-12 w-[100vw]  overflow-x-hidden">
+    <section id="projects" className="text-white w-[100vw] py-12 overflow-x-hidden">
       <h1 className="text-[7rem] md:text-[7rem] lg:leading-0 leading-[5rem] font-bold text-center mb-12">
         Featured <span className="text-[#BEB3FE]">Projects</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12 md:gap-7 place-items-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-6 w-[100vw] lg:grid-cols-3 gap-4  md:gap-7 place-items-center ">
         {projects.map((project, index) => (
-          <CardContainer key={index} containerClassName="w-full max-w-sm">
-            <CardBody className="bg-[#2B2B2B] border border-white/20 space-y-6 rounded-2xl p-6 shadow-lg">
+          <CardContainer key={index} containerClassName="w-[95%]  ">
+            <CardBody className=" bg-[#2B2B2B] border border-white/20 space-y-6 rounded-2xl p-6 shadow-lg">
               {/* Project Title */}
               <CardItem translateZ={50} className="text-2xl font-semibold mb-2">
                 {project.name}

@@ -27,19 +27,19 @@ const Page = () => {
     quote: "This platform has transformed the way I work with my clients.",
     name: "John Doe",
     designation: "CEO, CompanyX",
-    src: "https://picsum.photos/id/237/500/500",
+    src: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
   },
   {
     quote: "Amazing service! Highly recommend to everyone.",
     name: "Jane Smith",
     designation: "Marketing Manager, StartupY",
-    src: "https://picsum.photos/id/238/500/500",
+    src: "https://picsum.photos/id/220/500/500",
   },
   {
     quote: "A seamless experience from start to finish.",
     name: "Robert Wilson",
     designation: "Product Designer",
-    src: "https://picsum.photos/id/239/500/500",
+    src: "https://picsum.photos/id/259/500/500",
   },
 ];
 

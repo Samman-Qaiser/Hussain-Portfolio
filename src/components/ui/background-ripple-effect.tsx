@@ -25,8 +25,8 @@ const ref = useRef<HTMLDivElement>(null);
       ref={ref}
       className={cn(
         "relative h-[90vh] w-[100vw]",
-        "[--cell-border-color:var(--color-neutral-200)] [--cell-fill-color:var(bg-[#303030])] [--cell-shadow-color:var(--color-neutral-900)]",
-        "dark:[--cell-border-color:var(--color-neutral-700)] dark:[--cell-fill-color:var(--color-neutral-900)] dark:[--cell-shadow-color:var(--color-neutral-800)] bg-[#202020]",
+        "[--cell-border-color:var(--color-neutral-100)] [--cell-fill-color:var(bg-[#303030])] [--cell-shadow-color:var(--color-neutral-900)]",
+        "dark:[--cell-border-color:var(--color-neutral-600)] dark:[--cell-fill-color:var(--color-neutral-900)] dark:[--cell-shadow-color:var(--color-neutral-800)] bg-[#202020]",
       )}
     >
       <div className="relative h-auto w-auto overflow-hidden">

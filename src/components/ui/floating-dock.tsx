@@ -65,7 +65,7 @@ const FloatingDockMobile = ({
                 <a
                   href={item.href}
                   key={item.title}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[#BEB3FE] dark:bg-neutral-900"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[#BEB3FE] dark:bg-[#BEB3FE]"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </a>
@@ -78,7 +78,7 @@ const FloatingDockMobile = ({
         onClick={() => setOpen(!open)}
         className="flex h-10 w-10 items-center justify-center rounded-full bg-[#BEB3FE] dark:bg-neutral-800"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-100 dark:text-neutral-400" />
       </button>
     </div>
   );

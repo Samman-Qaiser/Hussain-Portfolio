@@ -23,7 +23,7 @@ const projects = [
   {
     name: "Aviator hack",
     description:
-      "A full-fledged Android app for secure YouTube channel trading, combining fingerprint authentication, real-time YouTube API stats, complete buy/sell modules, automated ownership reminders, and profit-tracking reports. With smart features like channel verification indicators and shareable performance cards.",
+      "Aviator Hack Game is a gambling-style app where users log in with their ID to play and test their luck. It features a smooth coin-based payment system for deposits and withdrawals, along with a clean UI, fast performance, and secure transactions. Built with scalability, it delivers a simple yet thrilling real-time gaming experience.",
     image: "/AviatorHackBanner.jpg",
     skills: ["Android", "Firebase", "Kotlin", "Firebase"],
   },
@@ -67,7 +67,7 @@ const projects = [
     name: "School Management System",
     description:
       "Built a school management system with apps for teachers, students, and the principal.Teachers mark attendance, publish exam results, manage diary and also can manage fee.Principal accesses comprehensive school statistic Students can see results, attendance, daily diary and their dues .",
-     image: "/CGS.JPG",
+     image: "/CGS.jpg",
     skills: ["React", "Node", "MongoDb", "Express","Tailwind","Typescript"],
   },
 ];

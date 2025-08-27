@@ -34,19 +34,34 @@ const projects = [
      video: "/TomatoVideo.mp4",
     skills: ["Android", "Firebase", "Kotlin", "Firebase","Resnet18","PyTorch"],
   },
+  
    {
-    name: "Grievance App",
+    name: "SafeNet – AI Cybersecurity Guard",
     description:
-      "Grievance is a user-friendly complaint resolution app that empowers individuals to raise concerns, track progress, and receive timely solutions. By streamlining the entire process, it ensures transparency, accountability, and efficiency, making it easier for users to get their issues heard and resolved effectively.",
-    image: "/Grievence.png",
+      "SafeNet is a mobile app that detects phishing links, fake apps, and suspicious network activity in real-time using machine learning models. It warns users instantly, provides safe-browsing recommendations, and ensures data protection with on-device ML + Firebase authentication.",
+    image: "/CyberSecurity.webp",
     skills: ["Android", "Firebase", "Kotlin", "Firebase"],
   },
    {
-    name: "Cricdex App",
+    name: "HealTrack – Smart Patient Monitoring",
     description:
-      "CricDex is a live cricket scoring app that delivers real-time updates, ball-by-ball commentary, and in-depth match coverage across all major tournaments. Along with live scores, it offers detailed statistics, player insights, and instant notifications, ensuring fans stay engaged and never miss a moment of the action.",
-    image: "/Cricdex App.png",
-    skills: ["Android", "Firebase", "Kotlin", "Firebase"],
+      "HealTrack is a healthcare companion app that integrates with wearables (IoT/Google Fit API) to monitor vitals like heart rate, oxygen level, and sleep cycles. It predicts health risks using AI-driven analytics, sends emergency alerts to family/doctors, and maintains digital health records securely in the cloud",
+    image: "/Health.webp",
+    skills: ["Android", "Firebase", "Kotlin", "Firebase","IOT"],
+  },
+  {
+    name: "HealTrack – Smart Patient Monitoring",
+    description:
+      "HealTrack is a healthcare companion app that integrates with wearables (IoT/Google Fit API) to monitor vitals like heart rate, oxygen level, and sleep cycles. It predicts health risks using AI-driven analytics, sends emergency alerts to family/doctors, and maintains digital health records securely in the cloud",
+    image: "/Health.webp",
+    skills: ["Android", "Firebase", "Kotlin", "Firebase","IOT"],
+  },
+   {
+    name: "Disaster Alert – Smart Emergency System",
+    description:
+      "A real-time disaster alert app that sends location-based warnings (earthquakes, floods, weather emergencies) using Google Maps API + Firebase push notifications. Users can report incidents, request help, and connect with nearby shelters.",
+    image: "/Disaster.webp",
+    skills: ["Android", "Firebase", "Kotlin", "Firebase","Google Maps API"],
   },
    {
     name: "School Management System",
@@ -64,7 +79,7 @@ const Projects = () => {
       <h1 className="text-[7rem]  md:text-[7rem] lg:leading-0 leading-[5rem] font-bold text-center mb-34">
         Featured <span className="text-[#BEB3FE]">Projects</span>
       </h1>
-      <div className="grid mt-3 grid-cols-1 md:grid-cols-2 p-3 lg:p-7 self-center right-2 gap-5 row-gap-12 relative   w-[100vw] lg:grid-cols-3 ">
+      <div className="grid mt-3 grid-cols-1 md:grid-cols-2 p-3 lg:p-7 self-center right-0 lg:right-2 gap-5 row-gap-12 relative   w-[100vw] lg:grid-cols-3 ">
         {projects.map((project, index) => (
           <CardContainer key={index} containerClassName="w-[97%]  m-auto ">
             <CardBody className=" bg-[#2B2B2B] border   lg:h-[90vh]  border-white/20 space-y-2 lg:space-y-6 rounded-2xl p-6 shadow-lg">
@@ -91,7 +106,7 @@ const Projects = () => {
   loop
   muted
   playsInline
-  className=" rounded-xl object-cover w-[100%] max-h-[34vh] "
+  className=" rounded-xl object-cover w-[100%] lg:max-h-[34vh] max-h-[20vh] "
     
 />
 
@@ -100,7 +115,7 @@ const Projects = () => {
       src={project.image as string} // ✅ guaranteed to be string
       alt={project.name}
        
-      className="rounded-xl object-cover w-[100%] min-h-[34vh] "
+      className="rounded-xl object-cover w-[100%] lg:max-h-[34vh] max-h-[20vh] "
     />
   ) : null}
 </CardItem>

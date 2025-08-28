@@ -51,7 +51,7 @@ const About = () => {
       </div>
 
       {/* Right Image */}
-      <div className='w-full lg:w-2/5 h-auto lg:h-[90vh] flex justify-center items-center mt-8 lg:mt-0'>
+      <div className='w-full relative lg:w-2/5 h-auto lg:h-[90vh] flex justify-center items-center mt-8 lg:mt-0'>
         <PixelImage src="/hussain.jpg" />
       </div>
     </div>

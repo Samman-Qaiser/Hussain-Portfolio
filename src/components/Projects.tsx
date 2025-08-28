@@ -49,13 +49,7 @@ const projects = [
     image: "/Health.webp",
     skills: ["Android", "Firebase", "Kotlin", "Firebase","IOT"],
   },
-  {
-    name: "HealTrack – Smart Patient Monitoring",
-    description:
-      "HealTrack is a healthcare companion app that integrates with wearables (IoT/Google Fit API) to monitor vitals like heart rate, oxygen level, and sleep cycles. It predicts health risks using AI-driven analytics, sends emergency alerts to family/doctors, and maintains digital health records securely in the cloud",
-    image: "/Health.webp",
-    skills: ["Android", "Firebase", "Kotlin", "Firebase","IOT"],
-  },
+
    {
     name: "Disaster Alert – Smart Emergency System",
     description:
